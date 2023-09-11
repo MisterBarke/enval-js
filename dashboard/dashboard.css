@@ -1,0 +1,284 @@
+.content2{
+    height: 30rem;
+    width: 30rem;
+    position: absolute;
+    left: 23rem;
+    top: 5rem;
+}
+.hover{
+    background-color: #c0e2ea;
+    width: 15rem;
+    border-radius: 10px;
+    height: 3rem;
+}
+.card-1-1{
+    height: 20rem;
+    width: 15rem;
+    background-color: #1898A8;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 4%;
+    border-radius: 13px;
+}
+.cards{
+   padding: 10%;
+ display: flex;
+
+}
+.label1{
+    font-size: 25px;
+    margin-left: 2rem;
+    color: #5c5c5c;
+    
+}
+.card-1-2{
+    height: 19.5rem;
+    width: 15rem;
+    background-color: #ffffff;
+    margin-left: 6rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 13px;
+    padding: 4%;
+
+   
+
+}
+.label2{
+    font-size: 25px;
+    margin-left: 8rem;
+    color: #5c5c5c;
+}
+.label3{
+    font-size: 25px;
+    margin-left: 2rem;
+    color: #5c5c5c;
+}
+.canvas{
+    height: 30rem;
+    width: 60rem;
+    margin-top: 3rem;
+}
+#bolt{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    color: white;
+}
+.P{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+    
+}
+.canvas1{
+    margin-bottom: 1%;
+}
+#droplet{
+ transform: scaleX(-100%);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #1898A8;
+}
+.Q{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    
+}
+.canvas2{
+    margin-bottom: 1%;
+}
+.A-B{
+    font-size: 50px;
+    position: absolute;
+    bottom: 2rem;
+    left: 9rem;
+    color: white;
+}
+.B-A{
+    font-size: 50px;
+    position: absolute;
+    bottom: 2rem;
+    left: 30rem;
+    color: rgb(0, 0, 0);
+    
+}
+.rond{
+    height: 2rem;
+    width: 2rem;
+    background-color: #b8b8b879;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    margin-left: 6.5rem;
+    margin-top: -0.5rem;
+    padding: 2%;
+ 
+}
+
+.menu{
+    display: none;
+}
+
+/*________tablet screen_________>>>>>_*/
+
+@media screen and (max-width:768px) {
+    .nav-items{
+        width: 33.5rem;
+        
+    }
+    .content2{
+        height: 30rem;
+        width: 17rem;
+        position: absolute;
+        left: 7rem;
+        top: 5rem;
+    }
+    .canvas{
+        height: 33rem;
+        width: 40rem;
+        margin-top: 3rem;
+    }
+    .A-B{
+        font-size: 50px;
+        position: absolute;
+        bottom: 3rem;
+        left: 7.5rem;
+        color: white;
+    }
+    .B-A{
+        font-size: 50px;
+        position: absolute;
+        bottom: 3rem;
+        left: 28.5rem;
+        color: rgb(0, 0, 0);
+        
+    }
+    .hover{
+        background-color: #c0e2ea;
+        width: 2rem;
+        border-radius: 10px;
+        height: 3rem;
+        padding: 8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .label3{
+        font-size: 30px;
+       
+        margin-left: 2rem;
+        color: #5c5c5c;
+    }
+    
+    
+}
+
+/*________MOBILE_________>>>>>>>MOBILE*/
+
+@media screen and (max-width:375px) {
+
+    .menu{
+        display: block;
+       margin-top: 1rem;
+       font-size: 25px;
+        
+    }
+    #drawer:target{
+        display: block;
+    }
+    .cards{
+        padding: 10%;
+      display: flex;
+      flex-direction: column;
+     
+     }
+     .B-A{
+        font-size: 50px;
+        position: absolute;
+        top: 45rem;
+        left: 2.5rem;
+        color: rgb(0, 0, 0);
+        
+    }
+    .A-B{
+        font-size: 50px;
+        position: absolute;
+        bottom: 3rem;
+        left: 2.5rem;
+        color: white;
+    }
+    .card-1-2{
+        height: 19.5rem;
+        width: 15rem;
+        background-color: #ffffff;
+        margin-left: -5rem;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 13px;
+        padding: 4%;
+    }
+    .card-1-1{
+        height: 20rem;
+        width: 15rem;
+        background-color: #1898A8;
+        margin-top: 3rem;
+        margin-left: -5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 4%;
+        border-radius: 13px;
+    }
+    .label2{
+        font-size: 25px;
+       position: relative;
+       top: 3rem;
+       left: -3.5rem;
+        margin-left: 1rem;
+        color: #5c5c5c;
+    }
+    .label1{
+        font-size: 25px;
+        margin-left: -2rem;
+        color: #5c5c5c;
+        
+    }
+    .canvas{
+        height: 19rem;
+        width: 20rem;
+        margin-top: 3rem;
+    }
+    .content2{
+        height: 30rem;
+        width: 17rem;
+        position: absolute;
+        left: 5rem;
+        top: 5rem;
+    }
+    .nav-items{
+        width: 22rem;
+        height: 4rem;
+        background-color: white;
+        position: absolute;
+        left: 1rem;  
+    }
+    #myChart{
+        margin-left: -2rem !important;
+    }
+}

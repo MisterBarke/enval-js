@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="dashboard.css">
+
+    <script src="https://kit.fontawesome.com/9b28ab6da4.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+        <section class="sideBar">
+            <div id="drawer" class="side-container">
+                <div><img class="logo" src="../logo.png" style="width: 22rem;" alt="Logo enval"></div>
+                <div class="side-list">
+                    <ul>
+                        <li class="hover">
+                            <a href="dashboard.html">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span class="spp">Dashboard</span>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href="../facture/facture.html">
+                                <i class="fa-solid fa-peace"></i>
+                                <span class="spp">Facture</span>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href="commande.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="spp">Commande</span>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href="../suivi/suivi.html">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span class="spp">Suivi</span>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href="serviceClient.html">
+                                <i class="fa-solid fa-comment-dots"></i>
+                                <span class="spp">Service Client</span>
+                            </a>
+                            
+                        </li>
+                        <div class="bottom-list">
+                            <ul>
+                                <li>
+                                    <a href="paramètre.html">
+                                        <i class="fa-solid fa-gear"></i>
+                                        <span class="spp">Paramètre</span>
+                                    </a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="deconnecter.html">
+                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                        <span class="spp">Déconnecter</span>
+                                    </a>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                       
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <section class="nav-bar">
+            <div class="nav-items">
+             
+                <div class="items">
+                    <i class="fa-regular fa-bell"></i>
+                    <img src="../avatar.jpg" style="height: 3rem;" alt="Your Profile">
+                </div>
+            </div>
+        </section>
+        <section class="dashboard">
+            <div class="content2">
+                <div class="cards">
+                    <div class="card-1">
+                        <label class="label1" for="">Analyse Positive</label>
+                        <div class="card-1-1">
+                            <i id="bolt" class="fa-solid fa-bolt"></i>
+                            <span class="P">Positif</span>
+                            <div class="canvas1">
+                                
+                                <canvas id="myChart2">
+                                
+                                </canvas>
+                                
+
+                              </div>
+                              <p class="A-B">80%</p>
+                        </div>
+                        
+
+                    </div>
+                    <div class="card-2">
+                        <label class="label2" for="">Analyse Négatives</label>
+                        <div class="card-1-2">
+                            <div class="rond"> <i id="droplet" class="fa-solid fa-droplet"></i></div>
+                            <span class="Q">Négatif</span>
+                            <div class="canvas2">
+                                
+                                <canvas id="myChart3">
+                                
+                                </canvas>
+                                
+
+                              </div>
+                              <p class="B-A">50%</p>
+                        </div>
+                </div>
+            </div>
+            <label class="label3" for="">Analyses Positives</label>
+            <div class="canvas">
+                <canvas id="myChart1"></canvas>
+              </div>
+    
+              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+              <script>
+
+
+                const ctx = document.getElementById('myChart1');
+    
+                new Chart(ctx, {
+    
+                  type: 'bar',
+                  data: {
+                    labels: ['Jan', 'Feb', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUG', 'SEPT', 'OCT', 'NOV', 'DEC'],
+                    datasets: [{
+    
+                      data: [10, 18, 24, 20, 13, 7, 9, 10, 11, 12, 13, 14],
+                      backgroundColor: [
+                        'white'
+                      ],
+                      hoverBackgroundColor: [
+                        '#4A96A6'
+                      ]
+    
+    
+    
+                    }]
+                  },
+                  options: {
+    
+    
+                    maintainAspectRatio: false,
+                    plugins: {
+                      legend: {
+                        display: false,
+                      }
+                    },
+    
+    
+                    scales: {
+                      y: {
+                        beginAtZero: true,
+                        display: false,
+    
+                      },
+                      x: {
+                        grid: {
+                          color: 'white',
+                        }
+                      }
+    
+    
+                    }
+    
+                  }
+                });
+    
+              </script>
+              <script>
+
+
+                const ftx = document.getElementById('myChart2');
+    
+                new Chart(ftx, {
+    
+                  type: 'doughnut',
+                  data: {
+                    labels: ['NOV', 'DEC'],
+                    datasets: [{
+                       
+    
+                      data: [14, 3],
+                      backgroundColor: [
+                        'white', '#ffffff68'
+                      ],
+                      
+                    }]
+                  },
+                  options: {
+                    cutout: 92,
+                
+                    radius: '100',
+                    circumference: '300',
+                    rotation: '211',
+                    borderWidth: '0',
+                    maintainAspectRatio: false,
+                    plugins: {
+                      legend: {
+                        display: false,
+                      }
+                    },
+    
+    
+                    scales: {
+                      y: {
+                        beginAtZero: true,
+                        display: false,
+    
+                      },
+                      x: {
+                        display: false,
+                        grid: {
+                          color: 'white',
+                        }
+                      }
+    
+    
+                    }
+    
+                  }
+                });
+    
+              </script>
+    
+    
+        </div>
+
+        </section>
+        <script>
+
+
+            const vtx = document.getElementById('myChart3');
+
+            new Chart(vtx, {
+
+              type: 'doughnut',
+              data: {
+                labels: ['NOV', 'DEC'],
+                datasets: [{
+                   
+
+                  data: [50, 50],
+                  backgroundColor: [
+                    '#1898A8', '#1897a85c'
+                  ],
+                  
+                }]
+              },
+              options: {
+                cutout: 92,
+            
+                radius: '100',
+                circumference: '300',
+                rotation: '211',
+                borderWidth: '0',
+                maintainAspectRatio: false,
+                plugins: {
+                  legend: {
+                    display: false,
+                  }
+                },
+
+
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                    display: false,
+
+                  },
+                  x: {
+                    display: false,
+                    grid: {
+                      color: 'white',
+                    }
+                  }
+
+
+                }
+
+              }
+            });
+
+          </script>
+
+
+    </div>
+
+    </section>
+    </main>
+</body>
+</html>

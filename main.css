@@ -1,0 +1,143 @@
+body{
+    background-color: #c0e2ea;
+    overflow-x: hidden;
+   
+    
+ 
+   
+
+}
+.logo{
+    width: 100% !important;
+}
+.avatar{
+    height: 3rem;
+}
+.main{
+    display: flex;
+}
+.side-container{
+    height: 100vh;
+    width: 22rem;
+    background-color: white;
+    position: fixed;
+   
+}
+li{
+    list-style-type: none;
+   margin-top: 1.5rem;
+  font-size: 23px;
+  
+  
+  
+
+}
+.spp{
+    margin-left: 2rem
+}
+li, a{
+    text-decoration: none;
+    color: grey;
+   
+}
+
+
+.nav-items{
+    width: 70% !important;
+    height: 4rem;
+    background-color: white;
+    position: absolute;
+    left: 23rem;  
+}
+.bottom-list{
+    position: absolute;
+    left: -0.2rem;
+  bottom: 1rem;
+}
+.fa-regular{
+    font-size: 30px;
+}
+.items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 35px;
+}
+li:hover{
+    background-color: #c0e2ea;
+    width: 15rem;
+    border-radius: 10px;
+    height: 3rem;
+  
+
+}
+/*MODE TABLETTE_____side-bar___________>>>>>>>>________nav-bar___________*/
+
+
+@media screen and (max-width: 768px) {
+  span{
+    display: none;
+  }
+  .logo{
+    display: none !important;
+  }
+  li:hover{
+    background-color: #c0e2ea;
+    width: 2rem;
+    border-radius: 10px;
+    height: 2rem;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-items{
+    width: 75% !important;
+    height: 4rem;
+    background-color: white;
+    position: absolute;
+    left: 7rem;  
+}
+.side-container{
+    height: 100vh;
+    width: 6rem;
+    background-color: white;
+    position: fixed;
+   
+}
+.side-list{
+    margin-top: 4rem;
+}
+.menu{
+    display: none;
+}
+    
+}
+/*________MOBILE_________>>>>>>>MOBILE*/
+
+@media screen and (max-width:375px) {
+
+    .side-container{
+        display: none;
+}
+.nav-items{
+    width: 23rem;
+    height: 4rem;
+    background-color: white;
+    position: absolute;
+    left: 1rem;  
+}
+.menu{
+    display: block;
+   margin-top: 1rem;
+   font-size: 25px;
+    
+}
+#drawer:target{
+    display: block;
+}
+.items{
+    margin-top: -2rem;
+ }
+}

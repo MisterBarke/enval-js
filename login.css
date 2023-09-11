@@ -1,0 +1,128 @@
+body {
+        display: inline;
+    }
+    .C{
+        color: #1898a8;
+    }
+    .E{
+        color: #79B51C ;
+    }
+    .a{
+        text-decoration: none;
+        
+    }
+    .one
+    {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 200px;
+    }
+    h2 
+        {
+            text-align: center;  
+        }
+    /* Styles pour la case Email*/
+    
+    .mail
+        {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 400px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: #8f8a8a;
+        height: 45px;
+        margin-bottom: 40px;
+        font-size: 15px;
+        padding-left: 10px;
+        margin-top: 40px;
+        }
+         /* Styles pour la case password*/
+    .pass 
+        {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 400px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: #8f8a8a;
+        height: 45px;
+        font-size: 15px;
+        padding-left: 10px; 
+        }
+     /* couleur du */
+    a   {
+            color:#8f8a8a;
+        }
+     /* Styles pour le bouton de conexion Email*/
+    .but
+        {
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        width: 400px;
+        border-radius: 10px; 
+        border-style: solid;
+        display: flex;
+        margin-top: 50px;
+        font-size: 15px;
+        height: 45px;
+        text-align: center;
+        padding-top: 10px;
+        cursor: pointer;
+        background-color: #1898a8;
+        color: white;
+        border: none;
+        }
+     /* Styles pour l'animation hover du buton*/
+    .but:hover{
+      background-color:#ffffff;
+      border: 2px solid #1898a8 ;
+      color: #1898a8;
+      
+      
+     
+    }
+     /* Styles pour le conteneur global*/
+    .contenue
+        {
+            position: relative;
+        }
+        .contenue{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+         /*style  responsive mobile */
+        @media screen and (max-width: 375px) {
+            .mail 
+             {
+                width: 300px;
+             }
+            .pass
+             {
+                width: 300px;  
+             }
+            .but{
+                width: 300px;
+               
+            }
+            
+          }
+        
+
+ 
+  
+        
+    
+       
+        
+
+        
+   

@@ -1,0 +1,102 @@
+.contain{
+    height: 83%;
+     width: 62rem;
+   
+    background-color: white;
+    position: absolute;
+    top: 5rem;
+    left: 23rem;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+   padding: 2%;
+}
+.divider{
+    width: 100%; 
+    height: 1px;
+    background-color: #b9bcbc;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+    color: #8f8a8a;
+   
+}
+td {
+    border: 1px solid #b9bcbc;
+    border-left: none;
+    
+   
+}
+.bord{
+    border-right: none;
+    text-align: center;
+}
+.btn2{
+    width: 5rem; 
+    height: 2rem;
+     border-radius: 7px; 
+     border: none;
+      background:  #4A96A6;
+      color: white;
+}
+
+.bord3{
+    border-right: none;
+   
+    text-align: center;
+}
+.échantillons{
+text-align: center;
+font-size: 30px;
+color:#8f8a8a;
+}
+tr:hover{
+    background-color:#cccccc84;
+}
+.btn2:hover{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #4A96A6;
+    color: black;
+}
+.table-B{
+    height: 39rem;
+     width: 60rem;
+}
+.hover1{
+    background-color: #c0e2ea;
+    width: 15rem;
+    border-radius: 10px;
+    height: 3rem;
+}
+
+
+/*________tablet screen_________>>>>>_*/
+
+@media screen and (max-width: 768px) {
+    .hover1{
+        background-color: #c0e2ea;
+        width: 2rem;
+        border-radius: 10px;
+        height: 3rem;
+        padding: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contain{
+        height: 50rem;
+         width: 37rem;
+        top: 5rem;
+        left: 8rem;
+       padding: 2%;
+    }
+    .table-B{
+        height: 50rem;
+         width: 37rem;
+    }
+
+    
+}
+
+
+

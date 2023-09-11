@@ -1,0 +1,207 @@
+
+
+
+.boite{
+background-color: white;
+height: 50rem;
+width: 60%;
+position: absolute;
+top: 6rem;
+left: 23rem;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+}
+th{
+    width: 59rem;
+    border: 1px solid rgb(185, 177, 177);
+    text-align: justify;
+    border-right: none;
+    border-left: none;
+}
+td{ border:1px solid rgb(168, 157, 157);
+    border-left: none;
+    
+    
+}
+.border1{
+    border-right: none;
+}
+table{
+    border-collapse: collapse;
+    width:100%;
+    height: 43rem;
+    text-align: center;
+    
+    
+    color: rgb(124, 113, 113);
+}
+/* .border2{
+border-bottom: none; */
+
+.border3{
+    border-bottom: none;
+    border-right: none;
+    }
+#tableuh{
+
+ width: 65%;
+padding-left: 1%;
+}
+
+
+.btn2{
+    width: 5rem; 
+    height: 2rem;
+     border-radius: 7px; 
+     border: none;
+      background:  #4A96A6;
+      color: white;
+}
+.btn2:hover{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #4A96A6;
+    color: black;
+}
+.test{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.input{
+    background-color: rgb(243, 240, 240);
+     border:none;
+     border-radius: 6px; 
+     height: 2rem;
+      width: 15rem ;    
+}
+
+#re {
+font-size: 20px;
+position: relative;
+right: 13.9rem;
+top: 0.2rem;
+} 
+.tableau{
+    margin-top: 10%;
+    
+    padding-left: 1%;
+    }
+
+tr:hover{
+    background-color: rgb(240, 234, 234);
+}
+.myTr:hover{
+    background-color: transparent;
+            
+}
+
+#ir{
+    color: red;
+}
+.hover4{
+    background-color: #c0e2ea;
+    width: 15rem;
+    
+    height: 3rem;
+}
+.hover6{
+    background-color: #c0e2ea;
+    width: 15rem;
+    border-radius: 10px;
+  
+    height: 3rem;
+}
+ input:focus{
+    outline-color: #79B51C ;
+    
+}
+#tr-titles{
+    background-color: #4A96A6;
+    color: white;
+}
+
+/*________tablet screen_________>>>>>_*/
+
+@media screen and (max-width: 768px) {
+    .hover4{
+        background-color: #c0e2ea;
+        width: 2rem;
+        border-radius: 10px;
+        height: 3rem;
+        padding: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hover6{
+        background-color: #c0e2ea;
+        width: 2rem;
+        border-radius: 10px;
+        height: 3rem;
+        padding: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .boite{
+        background-color: white;
+        height: 47rem;
+        width: 70%;
+        position: absolute;
+        top: 6rem;
+        left: 7rem;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            height: 40rem;
+            text-align: center;
+            color: rgb(124, 113, 113);
+        }
+        
+       
+
+    
+
+    
+}
+
+/*________MOBILE_________>>>>>>>MOBILE*/
+
+@media screen and (max-width:375px) {
+    .boite{
+        background-color: white;
+        height: 47rem;
+        width: 90%;
+        position: absolute;
+        top: 6rem;
+        left: 1rem;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        font-size: 10px;
+        }
+        .input{
+            background-color: rgb(243, 240, 240);
+             border:none;
+             border-radius: 6px; 
+             height: 2rem;
+              width: 20rem ; 
+              position: relative;
+            right: -0.5rem;   
+        }
+        
+        #re {
+        font-size: 20px;
+        position: relative;
+        right: 19rem;
+        top: 0.2rem;
+        } 
+        .fact{
+            display: none;
+        }
+
+}
+

@@ -1,0 +1,106 @@
+.contenu-detail{
+    height: 90rem;
+     width: 62rem;
+   
+    background-color: white;
+    position: absolute;
+    top: 5rem;
+    left: 23rem;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+   padding: 2%;
+}
+table{
+    border-collapse: collapse;
+    color: #8f8a8a;
+
+}
+.table1{
+    width: 95%;
+    border: 1px solid;
+    margin-left: 3%;
+}
+td{
+  padding: 4px;
+  
+}
+
+.comments{
+    margin-left: 5%;
+    
+
+}
+
+tr:hover{
+    background-color:#cccccc84;
+}
+.hover1{
+    background-color: #c0e2ea;
+    width: 15rem;
+    border-radius: 10px;
+    height: 3rem;
+}
+.blue{
+    background-color:#c0e2ea;
+}
+.avatar{
+    height: 3rem;
+}
+.table3{
+    width: 95%;
+     margin-left: 3%;
+      border: 1px solid;
+}
+.linear{
+    height: 9rem; 
+    width: 16rem; 
+    background-image: linear-gradient(to right, green , orange, red);
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 4%;
+    align-items: center;
+}
+.all-comments{
+    display: flex;
+}
+/*________tablet screen_________>>>>>_*/
+
+@media screen and (max-width: 768px) {
+    .hover1{
+        background-color: #c0e2ea;
+        width: 2rem;
+        border-radius: 10px;
+        height: 3rem;
+        padding: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenu-detail{
+        height: 100rem;
+         width: 37rem;
+        background-color: white;
+        position: absolute;
+        top: 5rem;
+        left: 8rem;
+        border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+       padding: 2%;
+    }
+    .table1{
+        width: 95%;
+        border: 1px solid;
+        margin-left: 3%;
+    }
+    .table3{
+       font-size: 13px; 
+    }
+    .comments{
+        margin-left: 5%;
+        font-size: 10px;
+    
+    }
+    
+
+    
+}
