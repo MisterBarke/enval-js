@@ -58,7 +58,7 @@ const filterFacture = document.getElementById("filter-facture");
 const filterLab = document.getElementById("filter-lab");
 const filterDate = document.getElementById("filter-date");
 const tableBody =document.getElementById('tbody');
-function displayTable(){
+function displayTable(x){
     let tableContent = '';
     factureItems.forEach(index =>{
         console.log(index.factures);
@@ -78,27 +78,25 @@ function displayTable(){
 
 
 }
+displayTable()
 
-function sortByDateAsc() {
-    tableBody.innerHTML = '';
-    const sortedItems = [...factureItems].sort((a, b) => new Date(a.theDate) - new Date(b.theDate));
-    displayTable(sortedItems);
-}
+const tableRow = document.querySelectorAll('#tableRow');
+function filteredFacture() {
+    // Trie du tableau factureItems par ordre croissant de la propriété factures
+    factureItems.sort(function(a, b) {
+      return parseInt(a.factures) - parseInt(b.factures);
+    });
+  
+    // Appel de la fonction displayTable pour afficher les éléments triés
+    displayTable(factureItems);
+  }
+  
+  // Appel de la fonction pour trier et afficher les éléments
 
-// Fonction de filtrage par date (ordre décroissant)
-function sortByDateDesc() {
-    const sortedItems = [...factureItems].sort((a, b) => new Date(b.theDate) - new Date(a.theDate));
-    displayTable(sortedItems);
-}
-
-// Écouteurs d'événements pour les boutons de filtrage
-filterFacture.addEventListener("click", sortByDateAsc);
-filterLab.addEventListener("click", displayTable.bind(null, factureItems)); // Affiche les données non triées
-filterDate.addEventListener("click", sortByDateDesc); // Par défaut, tri décroissant
-
-// Afficher les données par défaut (tri décroissant)
-sortByDateDesc();
-
+  filterFacture.addEventListener('click', ()=>{
+    tableBody.innerHTML = ''
+    filteredFacture();
+  })
 
 
 
