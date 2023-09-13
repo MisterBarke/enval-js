@@ -85,8 +85,50 @@
             </div>
         </section>
         <section class="content">
-         
+            <div class="form-head">
+                <a href="../dashboard/dashboard.html">Retour au tableau de bord</a>
+                <div>
+                    <button>Edit Password</button>
+                    <button>Delete Account</button>
+                </div>
+            </div>
+            <h6>Edit Profile</h6>
+            <div class="mainForm" >
+                <div class="form-div">
+                    <form action="/action_page.php">
+                      <label for="fname">First Name</label>
+                      <input type="text" id="name" name="firstname" placeholder="Your name..">
+                  
+                      <label for="lname">Your Email</label>
+                      <input type="text" id="email" name="lastname" placeholder="Your Email">
+                  
+                      <label for="country">Derniers Mots (Testament)</label>
+                     <textarea name="" id="textArea" cols="30" rows="10"></textarea>
+                    
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+                  <div class="avatarSection">
+                    <h6>Ton Avatar</h6>
+                    <div class="profile-picture">
+                        <div class="circleAvatar">
+                            <label for="image-picker">
+                                <img id="image-preview" src="../avatar.jpg" alt="your image" />
+                            </label>
+                            <input id="image-picker" type="file" accept="image/*" />
+                        </div>
+                        <div class="editPicturesBtn">
+                            <button id="edit-picture-button" >Edit Picture</button>
+                            <button>Delete Picture</button>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+           
+             
+       
         </section>
     </main>
+    <script src="parametre.js"></script>
 </body>
 </html>

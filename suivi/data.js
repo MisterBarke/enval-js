@@ -64,3 +64,5 @@
     },
   
 ]
+const suiviItemsJSON = JSON.stringify(suiviItems);
+localStorage.setItem('suiviItems', suiviItemsJSON);

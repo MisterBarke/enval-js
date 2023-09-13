@@ -1,7 +1,6 @@
 import {suiviItems} from "./data.js"
 console.log(suiviItems);
-const suiviItemsJSON = JSON.stringify(suiviItems);
-localStorage.setItem('suiviItems', suiviItemsJSON);
+
 
 const filterLot = document.getElementById("filter-lot");
 const filterEtat = document.getElementById("filter-Etat");
