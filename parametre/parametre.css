@@ -1,0 +1,19 @@
+.content{
+    height: 80vh;
+    width: 65%;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+    left: 25rem;
+    top: 6rem;
+}
+
+@media screen and (max-width: 768px) {
+   .content{
+    left: 7rem;
+    width: 75%;
+   } 
+   .logo2{
+     display: none;
+   }
+}

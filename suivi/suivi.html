@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="suivi.css">
     <script src="https://kit.fontawesome.com/9b28ab6da4.js" crossorigin="anonymous"></script>
     <title>Document</title>
@@ -14,25 +14,25 @@
         <section class="sideBar">
             <div>
             <div class="side-container">
-                <div><img class="logo" src="logo.png" style="width: 22rem;" alt="Logo enval"></div>
+                <div><img class="logo" src="../logo.png" style="width: 22rem;" alt="Logo enval"></div>
                 <div class="side-list">
                     <ul>
                         <li class="hover">
-                            <a href="dashboard.html">
+                            <a href="../dashboard/dashboard.html">
                                 <i class="fa-solid fa-chart-simple"></i>
                                 <span class="spp">Dashboard</span>
                             </a>
                             
                         </li>
                         <li >
-                            <a href="facture.html">
+                            <a href="../facture/facture.html">
                                 <i class="fa-solid fa-peace"></i>
                                 <span class="spp">Facture</span>
                             </a>
                             
                         </li>
                         <li> 
-                            <a href="commande.html">
+                            <a href="../commande/commande.html">
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 <span class="spp">Commande</span>
                             </a>
@@ -55,7 +55,7 @@
                         <div class="bottom-list">
                             <ul>
                                 <li>
-                                    <a href="paramètre.html">
+                                    <a href="../parametre/parametre.html">
                                         <i class="fa-solid fa-gear"></i>
                                         <span class="spp">Paramètre</span>
                                     </a>
@@ -74,129 +74,68 @@
                     </ul>
                 </div>
             </div>
-            
+     
 
         </section>
         <section class="nav-bar">
             <div class="nav-items">
                 <div class="items">
                     <i class="fa-regular fa-bell"></i>
-                    <img src="avatar.jpg" style="height: 3rem;" alt="Your Avatar">
+                    <img src="../avatar.jpg" style="height: 3rem;" alt="Your Avatar">
                 </div>
                
             </div>
             
            
         </section>
-        <section class="contenu">
-            <div class="contain">
-                <table class="table-B";>
-              
-                    <thead>
+        <section class="boite">
+            <div id="tableuh"> 
+                <div class="tableau">
+            <table>
+              <thead>
+                <tr class="myTr">
+                   
+                    <th class="hove" colspan="5">
+                        <div class="test">
+                          
+                            <h1 class="fact">Suivi</h1>
+                        
+                        <div class="tec">
+                          <i id="re" class="fa-solid fa-magnifying-glass"></i>
+                          <input class="input" id="searchInput" type="text"  placeholder= "">
+                      
+                          </div>
+                         
+                        
                        
-                        <tr >
-                           
-                            <td class="bord" colspan="5"><h1 class="échantillons"> Suivie des évaluations</h1></td> 
-                            
-                            
-                           
-                            
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Lot</td>
-                          <td>Etat</td>
-                          <td>Date Prévue</td>
-                          <td>Rapport</td>
-                          <td class="bord">Cliquez pour voir le rapport</td>
-                        </tr>
-                        <tr>
-                          <td>TE2098765466</td>
-                          <td>Reçu</td>
-                          <td>12/09/2023</td>
-                          <td>Non disponible</td>
-                          <td class="bord"><a href="suividetail.html"><button class="btn2">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                          <td>E2020393933</td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td class="bord"><a href="suividetail.html"><button class="btn2">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td>TE20876556</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="bord"><a href="suividetail.html"><button class="btn2">Voir</button></a></td>
-                          </tr>
-                          <tr>
-                            <td>Carbonate</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="bord"><a href="suividetail.html"><button class="btn2">Voir</button></a></td>
-                          </tr>
-                          <tr>
-                            <td>Chlorurire</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="bord"><a href="suividetail.html"><button class="btn2">Voir</button></a></td>
-                          </tr>
-                          <tr>
-                            <td>Chlourire</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="bord"><a href="suividetail.html"><button class="btn2">Voir</button></a></td>
-                          </tr>
-                          <tr>
-                            <td>CO2 libre</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="bord"><a href="suividetail.html"><button class="btn2">Voir</button></a></td>
-                          </tr>
-                          <tr>
-                            <td>Conductivité électrique</td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                            <td class="bord"><a href="suividetail.html"><button class="btn2">Voir</button></a></td>
-                          </tr>
-                          <tr>
-                            <td>PH/Température</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="bord"><a href="suividetail.html"><button class="btn2">Voir</button></a></td>
-                          </tr>
-                          <tr>
-                            <td>Couleur Brute</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="bord"><a href="suividetail.html"><button class="btn2">Voir</button></a></td>
-                          </tr>
-                          <tr>
-                            <td class="bord2">Cyanure libre</td>
-                            <td class="bord2"></td>
-                            <td class="bord2"></td>
-                            <td class="bord2"></td>
-                            <td class="bord3"><a href="suividetail.html"><button class="btn2">Voir</button></a></td>
-                          </tr>
-                      </tbody>
-                    
-                  </table>
-                  </div>
+                   </div>
+                      </th>              
+                </tr>
+                <tr id="tr-titles">
+                  <td id="filter-lot"><strong>Lot</strong></td>
+                  <td id="filter-etat"><strong>Etat</strong></td>
+                  <td id="filter-date"><strong>Date prévue</strong></td>
+                  <td id="filter-rap"><strong>Rapport</strong></td>
+                  <td class="border1">
+                    <strong>cliquer pour voir le rapport</strong>
+                  </td>
+              </tr>
+              </thead>
+              <tbody id="tbody">
+
+              </tbody>
+            </table>  
+                </div>
 
             </div>
+            
+
+            </div>
+            
+        
         </section>
  
     </main>
-    
+    <script src="suivi.js" type="module"></script>
 </body>
 </html>

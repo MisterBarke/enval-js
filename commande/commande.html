@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="facture.css">
+    <link rel="stylesheet" href="commande.css">
     <link rel="stylesheet" href="../main.css">
     <script src="https://kit.fontawesome.com/9b28ab6da4.js" crossorigin="anonymous"></script>
     <title>Document</title>
@@ -12,39 +12,39 @@
 <body>
     <main class="main">
         <section class="sideBar">
-            <div id="drawer" class="side-container">
+            <div class="side-container">
                 <div><img class="logo" src="../logo.png" style="width: 90%;" alt="Logo enval"></div>
                 <div class="side-list">
                     <ul>
-                        <li>
+                        <li >
                             <a href="../dashboard/dashboard.html">
                                 <i class="fa-solid fa-chart-simple"></i>
                                 <span class="spp">Dashboard</span>
                             </a>
                             
                         </li>
-                        <li  class="hover4">
-                            <a href="facture.html">
+                        <li  >
+                            <a href="../facture/facture.html">
                                 <i class="fa-solid fa-peace"></i>
                                 <span class="spp">Facture</span>
                             </a>
                             
                         </li>
-                        <li>
-                            <a href="../commande/commande.html">
+                        <li class="hover6">
+                            <a href="commande.html">
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 <span class="spp">Commande</span>
                             </a>
                             
                         </li>
-                        <li>
+                        <li >
                             <a href="../suivi/suivi.html">
                                 <i class="fa-solid fa-bag-shopping"></i>
                                 <span class="spp">Suivi</span>
                             </a>
                             
                         </li>
-                        <li>
+                        <li >
                             <a href="serviceClient.html">
                                 <i class="fa-solid fa-comment-dots"></i>
                                 <span class="spp">Service Client</span>
@@ -53,14 +53,14 @@
                         </li>
                         <div class="bottom-list">
                             <ul>
-                                <li>
+                                <li >
                                     <a href="paramètre.html">
                                         <i class="fa-solid fa-gear"></i>
                                         <span class="spp">Paramètre</span>
                                     </a>
                                     
                                 </li>
-                                <li>
+                                <li >
                                     <a href="deconnecter.html">
                                         <i class="fa-solid fa-arrow-right-from-bracket"></i>
                                         <span class="spp">Déconnecter</span>
@@ -77,7 +77,6 @@
         </section>
         <section class="nav-bar">
             <div class="nav-items">
-            
                 <div class="items">
                     <i class="fa-regular fa-bell"></i>
                     <img src="../avatar.jpg" style="height: 3rem;" alt="Your Profile">
@@ -85,37 +84,40 @@
             </div>
         </section>
         <section class="boite">
-            <div> 
-                <div class="tableau" >
+            <div id="tableuh"> 
+                <div class="tableau">
             <table>
               <thead>
                 <tr class="myTr">
                    
-                    <th class="hove" colspan="4">
+                    <th class="hove" colspan="5">
                         <div class="test">
-                            <h1 class="fact"> Facture</h1>
-                        <div class="tec">
                           
-                          <input class="input" id="searchInput" type="text"  placeholder= "">
+                            <h1 class="fact"> Commande</h1>
+                        
+                        <div class="tec">
                           <i id="re" class="fa-solid fa-magnifying-glass"></i>
+                          <input class="input" id="searchInput" type="text"  placeholder= "">
+                      
                           </div>
                          
-                         
+                        
                        
                    </div>
                       </th>              
                 </tr>
+                <tr id="tr-titles">
+                  <td id="filter-commande"><strong>Commande</strong></td>
+                  <td id="filter-lab"><strong>Laboratoitre</strong></td>
+                  <td id="filter-date"><strong>Date</strong></td>
+                  <td id="filter-stat"><strong>Status</strong></td>
+                  <td class="border1">
+                    <strong>cliquer pour voir le rapport</strong>
+                  </td>
+              </tr>
               </thead>
-              <tr id="tr-titles">
-                <td id="filter-facture"><strong>Factures</strong></td>
-                <td id="filter-lab"><strong>Laboratoitre</strong></td>
-                <td id="filter-date"><strong>Date</strong></td>
-                <td class="border1">
-                  <strong>cliquer pour voir le rapport</strong>
-                </td>
-            </tr>
               <tbody id="tbody">
-               
+                
               
               </tbody>
             </table>  
@@ -130,5 +132,5 @@
         </section>
     </main>
 
-    <script src="facture.js"></script>
+    <script src="commande.js"></script>
   </body>

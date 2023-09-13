@@ -1,7 +1,7 @@
 .contenu-detail{
     height: 90rem;
-     width: 62rem;
-   
+     width: 65%;
+    overflow:auto ;
     background-color: white;
     position: absolute;
     top: 5rem;
@@ -78,7 +78,7 @@ tr:hover{
     }
     .contenu-detail{
         height: 100rem;
-         width: 37rem;
+        width: 73%;
         background-color: white;
         position: absolute;
         top: 5rem;

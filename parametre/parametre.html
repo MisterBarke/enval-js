@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="facture.css">
     <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="parametre.css">
     <script src="https://kit.fontawesome.com/9b28ab6da4.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
@@ -13,41 +13,41 @@
     <main class="main">
         <section class="sideBar">
             <div id="drawer" class="side-container">
-                <div><img class="logo" src="../logo.png" style="width: 90%;" alt="Logo enval"></div>
+                <div ><img class="logo2" src="../logo.png" alt="Logo enval"></div>
                 <div class="side-list">
                     <ul>
-                        <li>
+                        <li class="hover">
                             <a href="../dashboard/dashboard.html">
                                 <i class="fa-solid fa-chart-simple"></i>
-                                <span class="spp">Dashboard</span>
+                                <span>Dashboard</span>
                             </a>
                             
                         </li>
-                        <li  class="hover4">
-                            <a href="facture.html">
+                        <li>
+                            <a href="../facture/facture.html">
                                 <i class="fa-solid fa-peace"></i>
-                                <span class="spp">Facture</span>
+                                <span>Facture</span>
                             </a>
                             
                         </li>
                         <li>
                             <a href="../commande/commande.html">
                                 <i class="fa-solid fa-cart-shopping"></i>
-                                <span class="spp">Commande</span>
+                                <span>Commande</span>
                             </a>
                             
                         </li>
                         <li>
                             <a href="../suivi/suivi.html">
                                 <i class="fa-solid fa-bag-shopping"></i>
-                                <span class="spp">Suivi</span>
+                                <span>Suivi</span>
                             </a>
                             
                         </li>
                         <li>
                             <a href="serviceClient.html">
                                 <i class="fa-solid fa-comment-dots"></i>
-                                <span class="spp">Service Client</span>
+                                <span>Service Client</span>
                             </a>
                             
                         </li>
@@ -56,14 +56,14 @@
                                 <li>
                                     <a href="paramètre.html">
                                         <i class="fa-solid fa-gear"></i>
-                                        <span class="spp">Paramètre</span>
+                                        <span>Paramètre</span>
                                     </a>
                                     
                                 </li>
                                 <li>
                                     <a href="deconnecter.html">
                                         <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                                        <span class="spp">Déconnecter</span>
+                                        <span>Déconnecter</span>
                                     </a>
                                     
                                 </li>
@@ -77,58 +77,16 @@
         </section>
         <section class="nav-bar">
             <div class="nav-items">
-            
+               
                 <div class="items">
                     <i class="fa-regular fa-bell"></i>
-                    <img src="../avatar.jpg" style="height: 3rem;" alt="Your Profile">
+                    <i class="fa-regular fa-circle-user"></i>
                 </div>
             </div>
         </section>
-        <section class="boite">
-            <div> 
-                <div class="tableau" >
-            <table>
-              <thead>
-                <tr class="myTr">
-                   
-                    <th class="hove" colspan="4">
-                        <div class="test">
-                            <h1 class="fact"> Facture</h1>
-                        <div class="tec">
-                          
-                          <input class="input" id="searchInput" type="text"  placeholder= "">
-                          <i id="re" class="fa-solid fa-magnifying-glass"></i>
-                          </div>
-                         
-                         
-                       
-                   </div>
-                      </th>              
-                </tr>
-              </thead>
-              <tr id="tr-titles">
-                <td id="filter-facture"><strong>Factures</strong></td>
-                <td id="filter-lab"><strong>Laboratoitre</strong></td>
-                <td id="filter-date"><strong>Date</strong></td>
-                <td class="border1">
-                  <strong>cliquer pour voir le rapport</strong>
-                </td>
-            </tr>
-              <tbody id="tbody">
-               
-              
-              </tbody>
-            </table>  
-                </div>
-
-            </div>
-            
-
-            </div>
-            
-        
+        <section class="content">
+         
         </section>
     </main>
-
-    <script src="facture.js"></script>
-  </body>
+</body>
+</html>
