@@ -61,7 +61,7 @@
                                     
                                 </li>
                                 <li>
-                                    <a href="deconnecter.html">
+                                    <a href="../index.html">
                                         <i class="fa-solid fa-arrow-right-from-bracket"></i>
                                         <span>Déconnecter</span>
                                     </a>
@@ -80,7 +80,7 @@
                
                 <div class="items">
                     <i class="fa-regular fa-bell"></i>
-                    <i class="fa-regular fa-circle-user"></i>
+                    <img id="imgNav" src="" alt="">
                 </div>
             </div>
         </section>
@@ -88,16 +88,16 @@
             <div class="form-head">
                 <a href="../dashboard/dashboard.html">Retour au tableau de bord</a>
                 <div>
-                    <button>Edit Password</button>
-                    <button>Delete Account</button>
+                    <button id="btnEditPwd">Edit Password</button>
+                    <button id="deleteAccount">Delete Account</button>
                 </div>
             </div>
             <h6>Edit Profile</h6>
             <div class="mainForm" >
                 <div class="form-div">
-                    <form action="/action_page.php">
+                    <form>
                       <label for="fname">First Name</label>
-                      <input type="text" id="name" name="firstname" placeholder="Your name..">
+                      <input type="text" id="name" name="firstname" placeholder="Your name">
                   
                       <label for="lname">Your Email</label>
                       <input type="text" id="email" name="lastname" placeholder="Your Email">
@@ -105,7 +105,7 @@
                       <label for="country">Derniers Mots (Testament)</label>
                      <textarea name="" id="textArea" cols="30" rows="10"></textarea>
                     
-                      <input type="submit" value="Submit">
+                      <button class="submitForm" id="submitForm">Submit</button>
                     </form>
                   </div>
                   <div class="avatarSection">
@@ -125,7 +125,18 @@
                   </div>
             </div>
            
-             
+             <div class="notifPush" id="notifPush">
+                <h6>Change Password</h6>
+                <form action="">
+                    <label for="">Old Password</label>
+                    <input type="text" id="oldPwd" placeholder="Old Password">
+                    <label for="">New Password</label>
+                    <input type="text" id="newPwd" placeholder="New Password">
+                    <label for="">Confirm</label>
+                    <input type="text" id="confirm" placeholder="Confirm Password">
+                    <button id="changePwd">Change</button>
+                </form>
+             </div>
        
         </section>
     </main>

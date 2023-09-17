@@ -53,9 +53,42 @@ input[type=text] {
     width: 99%;
     margin: 8px 0;
   }
+  .submitForm{
+    width: 100%;
+  }
   .avatarSection{
     margin-left: 4rem;
     width: 70%;
+  }
+  .notifPush{
+    width: 20rem;
+    height: 20rem;
+    background-color: #45a049;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    position: absolute;
+    top: 06rem;
+    left: 30%;
+    display: none;
+  }
+  #imgNav{
+    width: 3rem;
+    height: 3rem;
+  }
+  #oldPwd{
+    width: 90%;
+    margin-left: 1rem;
+  }
+  #newPwd{
+    width: 90%;
+    margin-left: 1rem;
+  }
+  #changePwd{
+    padding: 5px;
+    width: 90%;
+    margin-left: 1rem;
+    margin-top: 2rem;
   }
   img { max-width: 70%; max-height: 70%; }
 input { display: none; }

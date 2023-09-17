@@ -68,6 +68,13 @@ const filterLab = document.getElementById("filter-lab");
 const filterDate = document.getElementById("filter-date");
 const filterStat = document.getElementById("filter-stat");
 const tableBody = document.getElementById('tbody');
+const imgNav = document.getElementById('imgNav')
+const storedImage = localStorage.getItem('profileImage');
+window.addEventListener('load', function () {  
+  if (storedImage) {
+      imgNav.src = storedImage;
+  }
+});
 
 function renderTable(items) {
   let tableContent = '';

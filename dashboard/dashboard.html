@@ -81,7 +81,7 @@
              
                 <div class="items">
                     <i class="fa-regular fa-bell"></i>
-                    <img src="../avatar.jpg" style="height: 3rem;" alt="Your Profile">
+                    <img id="imgNav" src="../avatar.jpg" style="height: 3rem;" alt="Your Profile">
                 </div>
             </div>
         </section>
@@ -304,5 +304,14 @@
 
     </section>
     </main>
+    <script>
+      const imgNav = document.getElementById('imgNav');
+      const storedImage = localStorage.getItem('profileImage');
+window.addEventListener('load', function () {  
+  if (storedImage) {
+      imgNav.src = storedImage;
+  }
+});
+    </script>
 </body>
 </html>

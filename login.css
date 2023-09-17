@@ -99,6 +99,19 @@ body {
             left: 50%;
             transform: translate(-50%,-50%);
         }
+        #notif{
+            background-color: #1898a8;
+            color: white;
+            font-size: x-large;
+            font-weight: bolder;
+           text-align: center;
+            width: 15rem;
+            height: 6rem;
+            position: absolute;
+            right: 1rem;
+            top: 2rem;
+            display: none;
+        }
          /*style  responsive mobile */
         @media screen and (max-width: 375px) {
             .mail 

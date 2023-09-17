@@ -61,7 +61,7 @@ li, a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 1rem;
+  
     font-size: 35px;
 }
 li:hover{

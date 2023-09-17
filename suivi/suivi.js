@@ -1,7 +1,71 @@
-import {suiviItems} from "./data.js"
-console.log(suiviItems);
+const suiviItems = [
+  {
+      lot : 'C02 Libre',
+      etat : 'Reçu',
+      theDate : "10/02/2023",
+      rapport : "Non Disponible",
+      id : 1
+  },
+  {
+      lot : 'Carbonate',
+      etat : 'Non Reçu',
+      theDate : "10/02/2023",
+      rapport : "disponible",
+      id : 2
+  },
+  {
+      lot : 'Chlore',
+      etat : 'Non Reçu',
+      theDate : "12/04/2023",
+      rapport : "disponible",
+      id : 3
+  },
+  {
+      lot : 'Conductivité Electrique',
+      etat : 'Reçu',
+      theDate : "14/08/2023",
+      rapport : "Non Disponible",
+      id : 4
+  },
+  {
+      lot : 'Cyanure Libre',
+      etat : 'Non Reçu',
+      theDate : "22/02/2023",
+      rapport : "Disponible",
+      id : 5
+  },
+  {
+      lot : 'E2002039200',
+      etat : 'Reçu',
+      theDate : "10/04/2023",
+      rapport : "Non Disponible",
+      id : 6
+  },
+  {
+      lot : 'TEL2336336763',
+      etat : 'Reçu',
+      theDate : "28/06/2023",
+      rapport : "Non Disponible",
+      id : 7
+  },
+  {
+      lot : 'TEL263636363',
+      etat : 'Reçu',
+      theDate : "06/02/2023",
+      rapport : "Non Disponible",
+      id : 8
+  },
+  {
+      lot : 'E252626R2F2',
+      etat : 'Non Reçu',
+      theDate : "03/02/2024",
+      rapport : "Disponible",
+      id : 9
+  },
 
-
+] 
+const suiviItemsJSON = JSON.stringify(suiviItems);
+localStorage.setItem('suiviItems', suiviItemsJSON);
 const filterLot = document.getElementById("filter-lot");
 const filterEtat = document.getElementById("filter-Etat");
 const filterDate = document.getElementById("filter-date");
@@ -9,6 +73,14 @@ const filterRap = document.getElementById("filter-Rap");
 const tableBody = document.getElementById('tbody');
 const suiviTitle = document.getElementById('suiviTitle');
 const titleDiv = document.getElementById('titleDiv');
+const imgNav = document.getElementById('imgNav');
+const storedImage = localStorage.getItem('profileImage');
+window.addEventListener('load', function () {  
+if (storedImage) {
+imgNav.src = storedImage;
+}
+});
+
 
 
 function renderTable(items) {
@@ -19,21 +91,32 @@ function renderTable(items) {
   items.forEach((item, index) => {
     tableContent  += ` <tr>
       <td>${item.lot}</td>
-      <td>${item.etat}</td>
+      <td>${item.etat}</td> 
       <td>${item.theDate}</td>
       <td id="ir">${item.rapport}</td>
       <td class="border1" >
-      <a id='btn-details' href="suividetail.html/${item.id}"><button class="btn2">Voir</button></a>
+      <button id='btn-details' class="btn2">Voir</button>
       </td>
     </tr>`;
-
+  
   });
   
   tableBody.innerHTML = tableContent;
+  const btnDetails = document.querySelectorAll('#btn-details');
+  btnDetails.forEach((btn, index) => { 
+    btn.addEventListener('click', () => {
+      const selectedObj = items[index].id; 
+      localStorage.setItem('selectedObj', selectedObj);
+    if (items[index].rapport === 'disponible'){
+      window.location.href = 'suividetail.html';
+    }else{
+      alert('Rapport non disponible')
+    }
+     
+    });            
+  });
 }
 
-
-// Afficher la table au chargement initial
 renderTable(suiviItems);
 
 function filteredLot() {

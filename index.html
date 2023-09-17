@@ -8,6 +8,9 @@
     <title>page de conexion</title>
 </head>
 <body>
+    <div id="notif">
+        00:00:00
+    </div>
    <div class="contenue">
     <div class="one">
         <img src="logo.png">
@@ -15,11 +18,11 @@
     <h2><span class="C"> Connexion </span> 
         <span class="E">Espace Client</span> 
     </h2> 
-        <input class="mail" type="text"placeholder=Email>
-        <input class="pass" type="text"placeholder=Password>
+        <input class="mail" id="loginName" type="text"placeholder=Email>
+        <input class="pass" id="loginPwd" type="text"placeholder=Password>
         <a class="forget"href="">Forgot Password?</a>
-       <a class="a" href="dashboard/dashboard.html"> <button class="but">Rapport</button></a>
+       <a class="a" id="login" href="#"> <button class="but">Rapport</button></a>
     </div>
-
+<script src="index.js" type="module"></script>
 </body>
 </html>
