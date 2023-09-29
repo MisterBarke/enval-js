@@ -71,7 +71,7 @@ btnEditPwd.addEventListener('click', ()=>{
                 notifPush.textContent = 'Mot de passe changé avec succès.';
                 notifPush.style.color = 'green';
             } else {
-                console.log('Le nouveau mot de passe et la confirmation ne correspondent pas.');
+              alert('Le nouveau mot de passe et la confirmation ne correspondent pas.');
             }
         } else if (storedNewPwd && storedNewPwd === oldPwd.value) {
             if (newPwd.value === confirm.value) {
